@@ -1,4 +1,4 @@
-import {View, Text, StyleSheet, TextInput} from 'react-native';
+import {View, Text, StyleSheet} from 'react-native';
 import React from 'react';
 import Button from '../ui/Button';
 import CustomInput from '../ui/CustomInput';
@@ -7,7 +7,7 @@ import {useNavigation} from '@react-navigation/native';
 const OTP = () => {
   const navigation = useNavigation();
   const handlePress = () => {
-    navigation.navigate('register');
+    navigation.navigate('welcome');
   };
 
   return (
@@ -35,7 +35,7 @@ const OTP = () => {
           </View>
         </View>
       </View>
-      <Button>Verify</Button>
+      <Button onPress={handlePress}>Verify</Button>
       <View style={styles.account}>
         <Text style={styles.accountQ}>Don't have an account?</Text>
         <Text style={styles.accountBlue} onPress={handlePress}>

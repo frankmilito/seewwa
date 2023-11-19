@@ -50,6 +50,7 @@ const styles = StyleSheet.create({
     fontWeight: '800',
     fontFamily: 'PlusJakartaSans-Regular',
     marginBottom: 6,
+    // color: 'black',
   },
   subText: {
     fontFamily: 'PlusJakartaSans-Regular',
