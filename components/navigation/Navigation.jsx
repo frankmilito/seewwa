@@ -19,7 +19,16 @@ const BottomTabs = createBottomTabNavigator();
 
 const BottomNav = () => {
   return (
-    <BottomTabs.Navigator>
+    <BottomTabs.Navigator
+      screenOptions={{
+        tabBarStyle: {
+          backgroundColor: 'white',
+          padding: 10,
+          height: 60,
+          borderWidth: 0,
+          borderColor: 'white',
+        },
+      }}>
       <BottomTabs.Screen
         name="home"
         component={Home}
